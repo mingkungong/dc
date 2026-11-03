@@ -466,17 +466,24 @@
     }
 
     .btn {
-      font-size: 12.5px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 8px 16px;
+      border-radius: 10px;
+      font-size: 12px;
+      font-weight: 600;
       text-decoration: none;
-      border-radius: 7px;
-      padding: 5px 12px;
-      border: 1px solid var(--brand);
-      color: var(--brand);
-      background: #fff;
-      transition: background .15s;
+      cursor: pointer;
+      transition: opacity .2s;
+      background: var(--doc-btn-bg, #e8e2ff);
+      color: var(--doc-btn-fg, #5b4abf)
+    }
+    .btn:active {
+      opacity: .7
     }
 
-    .btn:hover {
+    /* .btn:hover {
       background: var(--brand-soft);
     }
 
@@ -487,7 +494,7 @@
 
     .btn.solid:hover {
       background: #0b5548;
-    }
+    } */
 
     footer {
       margin-top: 28px;
